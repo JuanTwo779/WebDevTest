@@ -131,7 +131,7 @@ h1{
         background: #131313;
     }
 
-    .navbar_menu.active {
+    .navbar__menu.active {
         background: #131313;
         top: 100%;
         opacity: 1;
@@ -149,7 +149,7 @@ h1{
         width: 25px;
         height: 3px;
         margin: 5px auto;
-        transition: all 0.3s ease;
+        transition: all 0.3s ease-in-out;
         background: white;
     }
 
@@ -194,10 +194,10 @@ h1{
     }
 
     #mobile-menu.is-active .bar:nth-child(1) {
-        translate: translateY(8px) rotate(45deg);
+        transform: translateY(8px) rotate(45deg);
     }
 
     #mobile-menu.is-active .bar:nth-child(3) {
-        translate: translateY(-8px) rotate(-45deg);
+        transform: translateY(-8px) rotate(-45deg);
     }
 }
