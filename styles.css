@@ -1,9 +1,9 @@
-body {
+/* body {
     background-color: rgb(32, 32, 32);
     background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
     background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
     background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px;
-  }
+  } */
 
 * {
     box-sizing: border-box;
@@ -37,7 +37,7 @@ body {
 
 #navbar__logo {
     background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);    
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb1ff 100%);    
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -203,4 +203,54 @@ body {
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+}
+
+/* Hero section */
+.main {
+    background-color: rgb(32, 32, 32);
+    /* background-image: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0) 20%, rgba(0,0,0,0) 80%, rgba(0,0,0,1)), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+    background-size: 100% 100%, 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 0px 0px, 5px 5px, 0px 0px; */
+}
+
+.main__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #141414;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+.main__content h1 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #ff0844 0%, #ffb1ff 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content h2 {
+    font-size: 4rem;
+    background-color: #ff8177;
+    background-image: linear-gradient(to top, #b721ff 0%, #21d4fd 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.main__content p {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
